@@ -1,10 +1,14 @@
 import "./App.css";
-import Logo from "./components/Logo";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import { GlobalStyles } from "./global";
 
 function App() {
   return (
     <div className="App">
-      <Logo />
+      <GlobalStyles />
+      <Nav />
+      <Footer />
     </div>
   );
 }
