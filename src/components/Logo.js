@@ -1,10 +1,10 @@
 import React from "react";
-import { GlobalStyles } from "../global";
 
 export default function Logo() {
   return (
-    <h1 class="logo" style={GlobalStyles.logo}>
-      NSXfitness
-    </h1>
+    <div className="logo">
+      <h1>NSXfitness</h1>
+      <i className="fas fa-dumbbell fa-md"></i>
+    </div>
   );
 }
