@@ -1,13 +1,17 @@
 import "./App.css";
-import Nav from "./components/Nav";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import MeetNick from "./components/MeetNick";
+import FitTip from "./components/FitTip";
 import { GlobalStyles } from "./global";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <Nav />
+      <NavBar />
+      <MeetNick />
+      <FitTip />
       <Footer />
     </div>
   );
