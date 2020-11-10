@@ -89,14 +89,38 @@ export const GlobalStyles = createGlobalStyle`
        flex-flow: row wrap;
        align-items: center;
        justify-content: space-around;
-       height: 600px;
+       height: 650px;
        background-color: #E53030;
    }
    .service-card {
        width: 400px;
-       height: 500px;
+       height: 550px;
        box-shadow: 2px 2px 2px #4a403e;
        padding: 10px;
        margin: 10px;
+   }
+   .service-card-text {
+       padding: 5px;
+   }
+   #contact {
+       display: flex;
+       flex-flow: column wrap;
+       align-items: center;
+       justify-content: center;
+   }
+   .contact-container {
+       display: flex;
+       flex-flow: column wrap;
+       padding: 10px;
+       margin: 20px 0;
+       width: 400px;
+       border: 1px solid #000000;
+       box-shadow: 2px 2px #4a403e;
+   }
+   .contact-input {
+       margin: 5px;
+   }
+   #submit-button {
+       background-color: #F08888;
    }
 `;

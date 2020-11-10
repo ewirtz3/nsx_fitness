@@ -7,7 +7,7 @@ export default function NavMenu() {
       <li className="nav-item">
         <Link
           activeClass="active"
-          to="meetNick"
+          to="meet-nick"
           spy={true}
           smooth={true}
           offset={-70}
@@ -19,7 +19,7 @@ export default function NavMenu() {
       <li className="nav-item">
         <Link
           activeClass="active"
-          to="fitTip"
+          to="fit-tip"
           spy={true}
           smooth={true}
           offset={-70}

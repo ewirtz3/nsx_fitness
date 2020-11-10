@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import MeetNick from "./components/MeetNick";
 import FitTip from "./components/FitTip";
 import ServiceCardContainer from "./components/ServiceCardContainer";
+import Contact from "./components/Contact";
 import { GlobalStyles } from "./global";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <MeetNick />
       <FitTip />
       <ServiceCardContainer />
+      <Contact />
       <Footer />
     </div>
   );
