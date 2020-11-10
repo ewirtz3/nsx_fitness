@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import MeetNick from "./components/MeetNick";
 import FitTip from "./components/FitTip";
+import ServiceCardContainer from "./components/ServiceCardContainer";
 import { GlobalStyles } from "./global";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <MeetNick />
       <FitTip />
+      <ServiceCardContainer />
       <Footer />
     </div>
   );

@@ -1,17 +1,25 @@
 import React from "react";
 
-export default function ServiceCard() {
+export default function ServiceCard({
+  cardImgUrl,
+  cardImgAlt,
+  cardTitle,
+  cardText,
+}) {
   return (
     <div className="service-card">
       <div className="service-card-header">
         <img
-          src="https://recreation.uic.edu/wp-content/uploads/sites/377/2019/01/REC_FTile_PersonalTrainType.jpg"
+          src={cardImgUrl}
           height="200"
           width="200"
-          alt="offering personalized workouts in 300 and 60-minute time blocks"
+          alt={cardImgAlt}
           className="service-card-img"
         />
-        <h1 className="service-card-title"></h1>
+        <h1 className="service-card-title">{cardTitle}</h1>
+        {cardText.map((text) => {
+          return <p className="service-card-text">{text}</p>;
+        })}
       </div>
     </div>
   );

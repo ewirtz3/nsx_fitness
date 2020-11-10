@@ -16,21 +16,22 @@ export const GlobalStyles = createGlobalStyle`
     }
     .header-logo {
         font-family: 'Barlow Condensed', sans-serif;
-        color: #f5390f;
+        color: #E53030;
         font-size: 40px;
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 25px;
+        text-shadow: 2px 2px #4a403e;
     }
-    .logo:hover, #instagram:hover, #facebook:hover, #tik-tok:hover {
+    .header-logo:hover, #instagram:hover, #facebook:hover, #tik-tok:hover {
         cursor: pointer;
         color: #4a403e;
     }
     .fa-dumbbell {
         transform: rotate(30deg);
         padding: 5px;
-        color: #f5390f;
+        color: #E53030;
     }
     .column {
         display: flex;
@@ -54,14 +55,14 @@ export const GlobalStyles = createGlobalStyle`
     }
    .nav-item:hover {
        cursor: pointer;
-       color: #f5390f;
+       color: #E53030;
    }
    .footer{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #f5390f;
+    background-color: #E53030;
     color: #ffffff;
     text-shadow: 2px 2px #4a403e;
 }
@@ -69,7 +70,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 10px;
 }
    #meet-nick {
-       background-color: #f5390f;
+       background-color: #E53030;
    }
    .meet-nick {
        padding: 20px;
@@ -82,5 +83,20 @@ export const GlobalStyles = createGlobalStyle`
        flex-direction: row;
        align-items: center;
        margin: 20px 250px 20px 250px;
+   }
+   .service-card-container {
+       display: flex;
+       flex-flow: row wrap;
+       align-items: center;
+       justify-content: space-around;
+       height: 600px;
+       background-color: #E53030;
+   }
+   .service-card {
+       width: 400px;
+       height: 500px;
+       box-shadow: 2px 2px 2px #4a403e;
+       padding: 10px;
+       margin: 10px;
    }
 `;

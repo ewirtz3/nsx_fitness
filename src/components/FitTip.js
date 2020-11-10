@@ -16,6 +16,11 @@ export default function FitTip() {
           minutes of stretching and breathing. It is an incredibly calm and
           soothing way to wake up, and benefits your body and mind!
         </p>
+        <p>
+          As with all physical activity, only take your stretches as far as your
+          body allows. Find the middle ground between effort and pain.{" "}
+          <em>Never</em> lock your knees, and always keep breathing.
+        </p>
       </div>
       <img
         src="https://www.risephysicaltherapy.com/uploads/dynamic-stretches.jpg"
