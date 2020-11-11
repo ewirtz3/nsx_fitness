@@ -20,7 +20,7 @@ export default function ServiceCardContainer() {
       cardImgAlt: "Offering one-on-one workouts where you are",
       cardTitle: "One-on-One, Where You Are",
       cardText: [
-        "Your personalized plan paves the road for your workouts. I'll be there to guide you towards your goals",
+        "Your personalized plan paves the road for your workouts; I'll be there to guide you towards your goals",
         "I come to you to work out, so you don't have to worry about COVID-19 in a gym space",
         "I also incorporate beach and park workouts, to keep things spicy and sandy",
       ],

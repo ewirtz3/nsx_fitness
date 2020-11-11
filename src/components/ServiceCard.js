@@ -18,7 +18,12 @@ export default function ServiceCard({
         />
         <h1 className="service-card-title">{cardTitle}</h1>
         {cardText.map((text) => {
-          return <p className="service-card-text">{text}</p>;
+          return (
+            <>
+              <p className="service-card-text">{text}</p>
+              <hr />
+            </>
+          );
         })}
       </div>
     </div>

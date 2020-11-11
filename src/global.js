@@ -14,17 +14,24 @@ export const GlobalStyles = createGlobalStyle`
         align-items: center;
         font-family: 'Montserrat', sans-serif;
     }
-    .header-logo {
+    #header-logo {
         font-family: 'Barlow Condensed', sans-serif;
         color: #E53030;
-        font-size: 40px;
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 25px;
         text-shadow: 2px 2px #4a403e;
     }
-    .header-logo:hover, #instagram:hover, #facebook:hover, #tik-tok:hover {
+    #header-name {
+        display: block;
+        font-size: 40px;
+        line-height: 0px;
+    }
+    #header-icon {
+        font-size: 40px;
+    }
+    #header-logo:hover, #instagram:hover, #facebook:hover, #tik-tok:hover {
         cursor: pointer;
         color: #4a403e;
     }
@@ -39,19 +46,20 @@ export const GlobalStyles = createGlobalStyle`
         padding: 10px;
         margin: 10px;
     }
-    .nav-content, .nav {
+    .nav-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: 100%;
         text-shadow: 1px 1px #000000;
-        width: 100%;
+        width: 100vw;
     }
     .nav-item {
         display: inline;
         margin-left: 25px;
         margin-right: 25px;
+        font-size: 25px;
     }
    .nav-item:hover {
        cursor: pointer;
@@ -88,16 +96,23 @@ export const GlobalStyles = createGlobalStyle`
        display: flex;
        flex-flow: row wrap;
        align-items: center;
-       justify-content: space-around;
-       height: 650px;
+       justify-content: center;
+       height: 750px;
        background-color: #E53030;
    }
    .service-card {
-       width: 400px;
-       height: 550px;
-       box-shadow: 2px 2px 2px #4a403e;
+       width: 300px;
+       height: 650px;
        padding: 10px;
+       margin: 40px 100px 40px 100px;
+       background-color: #41403e;
+       color: #ffffff;
+   }
+   .service-card-img {
        margin: 10px;
+   }
+   .service-card-title {
+       font-size: 20px;
    }
    .service-card-text {
        padding: 5px;
