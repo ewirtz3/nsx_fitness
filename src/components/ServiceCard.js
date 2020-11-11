@@ -21,7 +21,7 @@ export default function ServiceCard({
           return (
             <>
               <p className="service-card-text">{text}</p>
-              <hr />
+              <hr className="horizontal-rule" />
             </>
           );
         })}

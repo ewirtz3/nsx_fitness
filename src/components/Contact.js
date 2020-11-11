@@ -4,25 +4,37 @@ export default function Contact() {
   return (
     <div id="contact">
       <h2 className="contact-header">
-        Interested in taking the next step? Let's get connected!
+        Ready to get started? Book your free fitness consultation today!
       </h2>
       <div className="contact-container">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Name"
-          className="contact-input"
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email"
-          className="contact-input"
-          required
-        />
+        <div id="name-email">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name*"
+            className="contact-input"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email*"
+            className="contact-input"
+            required
+          />
+        </div>
+        <div id="text-input">
+          <textarea
+            rows="8"
+            cols="120"
+            id="contact-text"
+            name="contact-text"
+            placeholder="(Optional) Tell me more about your fitness goals"
+            className="contact-input"
+          />
+        </div>
         <button type="submit" className="contact-input" id="submit-button">
           <strong>Submit</strong>
         </button>

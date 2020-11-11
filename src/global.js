@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
         flex-direction: row;
         align-items: center;
         margin-left: 25px;
-        text-shadow: 2px 2px #4a403e;
+        text-shadow: 2px 2px #353535;
     }
     #header-name {
         display: block;
@@ -33,7 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     #header-logo:hover, #instagram:hover, #facebook:hover, #tik-tok:hover {
         cursor: pointer;
-        color: #4a403e;
+        color: #353535;
     }
     .fa-dumbbell {
         transform: rotate(30deg);
@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle`
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        text-shadow: 1px 1px #000000;
+        text-shadow: 1px 1px #353535;
         width: 100vw;
     }
     .nav-item {
@@ -72,7 +72,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     background-color: #E53030;
     color: #ffffff;
-    text-shadow: 2px 2px #4a403e;
+    text-shadow: 2px 2px #353535;
 }
 .fa-instagram, .fa-facebook, .fa-tiktok {
     padding: 10px;
@@ -105,7 +105,7 @@ export const GlobalStyles = createGlobalStyle`
        height: 650px;
        padding: 10px;
        margin: 40px 100px 40px 100px;
-       background-color: #41403e;
+       background-color: #353535;
        color: #ffffff;
    }
    .service-card-img {
@@ -117,20 +117,34 @@ export const GlobalStyles = createGlobalStyle`
    .service-card-text {
        padding: 5px;
    }
+   .horizontal-rule {
+       opacity: 0.75;
+   }
    #contact {
        display: flex;
        flex-flow: column wrap;
        align-items: center;
        justify-content: center;
+       background-color: #353535;
+       color: white;
    }
    .contact-container {
        display: flex;
        flex-flow: column wrap;
-       padding: 10px;
+       padding: 20px;
        margin: 20px 0;
-       width: 400px;
+       width: 1050px;
+       background-color: #ffffff;
        border: 1px solid #000000;
-       box-shadow: 2px 2px #4a403e;
+       box-shadow: 2px 2px #353535;
+   }
+   #name-email {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+   }
+   #name, #email {
+       width: 50%;
    }
    .contact-input {
        margin: 5px;
