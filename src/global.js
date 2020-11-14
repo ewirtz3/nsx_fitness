@@ -91,6 +91,7 @@ export const GlobalStyles = createGlobalStyle`
        flex-direction: row;
        align-items: center;
        margin: 20px 250px 20px 250px;
+       font-size: 20px;
    }
    .service-card-container {
        display: flex;
