@@ -82,7 +82,6 @@ export const GlobalStyles = createGlobalStyle`
    }
    .meet-nick {
        padding: 20px;
-       margin: 30px 100px;
        color: #ffffff;
        font-size: 20px;
    }
@@ -90,7 +89,7 @@ export const GlobalStyles = createGlobalStyle`
        display: flex;
        flex-direction: row;
        align-items: center;
-       margin: 20px 250px 20px 250px;
+       margin: 20px;
        font-size: 20px;
    }
    .service-card-container {
@@ -152,5 +151,14 @@ export const GlobalStyles = createGlobalStyle`
    }
    #submit-button {
        background-color: #F08888;
+   }
+
+   @media (max-width: 500px) {
+    div.fit-tip-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 20px;
+    }
    }
 `;
