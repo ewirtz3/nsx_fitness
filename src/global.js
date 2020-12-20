@@ -153,12 +153,14 @@ export const GlobalStyles = createGlobalStyle`
        background-color: #F08888;
    }
 
-   @media (max-width: 500px) {
-    div.fit-tip-text {
+   @media screen and (max-width: 1400px) {
+    .service-card-container {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         align-items: center;
-        font-size: 20px;
+        justify-content: center;
+        height: 750px;
+        // background-color: #E53030;
     }
    }
 `;
