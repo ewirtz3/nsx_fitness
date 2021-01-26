@@ -92,66 +92,41 @@ export const GlobalStyles = createGlobalStyle`
        margin: 20px;
        font-size: 20px;
    }
-   .service-card-container {
-       display: flex;
-       flex-flow: row wrap;
-       align-items: center;
-       justify-content: center;
-       height: 750px;
-       background-color: #E53030;
-   }
-   .service-card {
-       width: 300px;
-       height: 650px;
-       padding: 10px;
-       margin: 40px 100px 40px 100px;
-       background-color: #353535;
-       color: #ffffff;
-   }
-   .service-card-img {
-       margin: 10px;
-   }
-   .service-card-title {
-       font-size: 20px;
-   }
-   .service-card-text {
-       padding: 5px;
+   #card-container {
+       padding: 20px;
    }
    .horizontal-rule {
        opacity: 0.75;
    }
    #contact {
-       display: flex;
-       flex-flow: column wrap;
-       align-items: center;
-       justify-content: center;
        background-color: #353535;
        color: white;
+       padding: 10px;
    }
-   .contact-container {
-       display: flex;
-       flex-flow: column wrap;
-       padding: 20px;
-       margin: 20px 0;
-       width: 1050px;
-       background-color: #ffffff;
-       border: 1px solid #000000;
-       box-shadow: 2px 2px #353535;
-   }
-   #name-email {
-       display: flex;
-       flex-direction: row;
-       justify-content: space-evenly;
-   }
-   #name, #email {
-       width: 50%;
-   }
-   .contact-input {
-       margin: 5px;
-   }
-   #submit-button {
-       background-color: #F08888;
-   }
+//    .contact-container {
+//        display: flex;
+//        flex-flow: column wrap;
+//        padding: 20px;
+//        margin: 20px 0;
+//        width: 1050px;
+//        background-color: #ffffff;
+//        border: 1px solid #000000;
+//        box-shadow: 2px 2px #353535;
+//    }
+//    #name-email {
+//        display: flex;
+//        flex-direction: row;
+//        justify-content: space-evenly;
+//    }
+//    #name, #email {
+//        width: 50%;
+//    }
+//    .contact-input {
+//        margin: 5px;
+//    }
+//    #submit-button {
+//        background-color: #F08888;
+//    }
 
    @media screen and (max-width: 1400px) {
     .service-card-container {

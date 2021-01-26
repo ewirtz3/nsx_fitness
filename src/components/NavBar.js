@@ -4,7 +4,7 @@ import NavMenu from "./NavMenu";
 
 export default function NavBar() {
   return (
-    <nav id="navbar">
+    <nav className="navbar">
       <div className="nav-content">
         <Logo />
         <NavMenu />

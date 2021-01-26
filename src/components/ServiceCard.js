@@ -7,7 +7,7 @@ export default function ServiceCard({
   cardText,
 }) {
   return (
-    <div className="card">
+    <div className="card mx-4 text-center">
       <img
         src={cardImgUrl}
         height="200"
