@@ -40,12 +40,6 @@ export const GlobalStyles = createGlobalStyle`
         padding: 5px;
         color: #E53030;
     }
-    .column {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin: 10px;
-    }
     .nav-content {
         display: flex;
         flex-direction: row;
@@ -65,12 +59,10 @@ export const GlobalStyles = createGlobalStyle`
        cursor: pointer;
        color: #E53030;
    }
-   .footer{
-    display: flex;
+   #footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #E53030;
     color: #ffffff;
     text-shadow: 2px 2px #353535;
 }
