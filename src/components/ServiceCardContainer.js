@@ -38,18 +38,20 @@ export default function ServiceCardContainer() {
     },
   ];
   return (
-    <div id="services" className="service-card-container">
-      {serviceCardArr.map((serviceCard, i) => {
-        return (
-          <ServiceCard
-            key={i}
-            cardImgUrl={serviceCard.cardImgUrl}
-            cardImgAlt={serviceCard.cardImgAlt}
-            cardTitle={serviceCard.cardTitle}
-            cardText={serviceCard.cardText}
-          />
-        );
-      })}
+    <div className="container">
+      <div id="services" className="card-group">
+        {serviceCardArr.map((serviceCard, i) => {
+          return (
+            <ServiceCard
+              key={i}
+              cardImgUrl={serviceCard.cardImgUrl}
+              cardImgAlt={serviceCard.cardImgAlt}
+              cardTitle={serviceCard.cardTitle}
+              cardText={serviceCard.cardText}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
