@@ -70,10 +70,13 @@ export const GlobalStyles = createGlobalStyle`
     padding: 10px;
 }
    #meet-nick {
-       background-color: #E53030;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       padding: 10px;
    }
    .meet-nick {
-       padding: 10px;
+       padding: 5px;
        color: #ffffff;
        font-size: 18px;
    }
