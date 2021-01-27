@@ -8,14 +8,14 @@ export default function MeetNick() {
           Hey, I'm Nick! I live in San Diego and personal fitness training is
           both what I live for and what I do for a living. I'm here to assist
           you in assessing your fitness goals, creating a plan to achieve them,
-          and working with you to make your goals a reality.{" "}
+          and working with you to make your goals a reality.
         </p>
         <p className="meet-nick">
           As an athlete, I have personal experience with strengthening and
           conditioning the human body. I have also received a Bachelor's degree
           in Kinesiology with an emphasis in exercise physiology and health
-          science. Additionally, I am a certified Corrective Exericse
-          Specialist.{" "}
+          science. Additionally, I am a certified Corrective Exercise
+          Specialist.
         </p>
         <p className="meet-nick">
           The human body is a phenomenal machine, and should be properly taken
