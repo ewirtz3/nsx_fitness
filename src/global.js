@@ -73,16 +73,16 @@ export const GlobalStyles = createGlobalStyle`
        background-color: #E53030;
    }
    .meet-nick {
-       padding: 20px;
+       padding: 10px;
        color: #ffffff;
-       font-size: 20px;
+       font-size: 18px;
    }
    #fit-tip {
        display: flex;
        flex-direction: row;
        align-items: center;
        margin: 20px;
-       font-size: 20px;
+       font-size: 18px;
    }
    #card-container {
        padding: 20px;

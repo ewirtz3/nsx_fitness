@@ -7,12 +7,12 @@ export default function Logo() {
   };
 
   return (
-    <div id="header-logo">
+    <div id="header-logo" className="text-danger">
       <div id="header-name">
         <h1 onClick={scrollToTop}>NSXfitness</h1>
         <p>PERSONAL TRAINING</p>
       </div>
-      <i id="header-icon" className="fas fa-dumbbell fa-md"></i>
+      <i id="header-icon" className="fas fa-dumbbell fa-md text-danger"></i>
     </div>
   );
 }
