@@ -2,17 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     :root {
-    --slate-color: #5c5a5a;
+    --slate-color: rgb(30,30,40);
     --red-color: #c7162b;
-    --teal-color: #16C7B2;
+    --teal-color: #0096a1;
     }
-  
-  @mixin transition-all {
-      -webkit-transition: all 200ms ease-in-out;
-      -moz-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
-      }
   
     html, body {
         margin: 0;
@@ -23,6 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     body {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         font-family: 'Montserrat', sans-serif;
@@ -73,11 +67,25 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--red-color);
     }
      #footer{
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      text-shadow: 2px 2px var(--slate-color);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      div.social-links{
+          background: var(--slate-color);
+          color: white;
+          overflow: hidden;
+          padding-bottom: 4px;
+          text-align: center;
+          ul {
+              margin: 0;
+              padding: 0;
+          }
+          li {
+              display: inline;
+              margin: 0;
+              padding: 0;
+          }
+      }
   }
   .fa-instagram, .fa-facebook, .fa-tiktok {
       padding: 10px;
@@ -106,52 +114,52 @@ export const GlobalStyles = createGlobalStyle`
      .horizontal-rule {
          opacity: 0.75;
      }
-     #contact {
-        background-color: var(--slate-color);
-         color: white;
-         padding: 10px;
+     form {
+         max-width: 420px;
+         margin: 50px auto;
      }
-      .contact-container {
-         display: flex;
-        flex-flow: column wrap;
-          padding: 20px;
-          margin: 20px 0;
-          width: 1050px;
-          background-color: #ffffff;
-          border: 1px solid #000000;
-          box-shadow: 2px 2px var(--slate-color);
-      }
-      
-      #name-email {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-evenly;
-      }
-      #name, #email {
-          width: 50%;
-      }
-      .contact-input {
-          margin: 5px;
-      }
-      .btn {
-        color: var(--red-color);
-        cursor: pointer;
-        display: inline-block;
-        letter-spacing: 0.075em;
-        padding: .8em 1em;
-        margin: auto 2em;
-        position: relative;
-        align-self: center;
-        text-transform: uppercase;
-        border: 3px var(--red-color) solid;
-        border-image: linear-gradient(45deg, var(--red-color) 0%, var(--teal-color) 100%);
-        border-image-slice: 1 1 0 0;
-        z-index: 1;
-        box-shadow: -0.5em .5em transparentize(var(--slate-color),1);
-        transform-origin: left bottom;
-        @include transition-all;
-    }
-  
+     .contact-header{
+         max-width: 420px;
+         margin: 50px auto;
+         text-align: center;
+     }
+     .contact-input{
+         color: white;
+         font-weight: 500;
+         font-size: 18px;
+         border-radius: 5px;
+         line-height: 22px;
+         background-color: var(--slate-color);
+         border: 2px solid var(--red-color);
+         transition: all 0.3s;
+         padding: 13px;
+         margin-bottom: 15px;
+         width: 100%;
+         box-sizing: border-box;
+         outline: 0;
+     }
+     textarea {
+         height: 150px;
+         line-height: 150%;
+         resize: vertical;
+     }
+     [type="submit"] {
+         width: 100%;
+         background: var(--red-color);
+         border-radius: 5px;
+         border: 0;
+         cursor: pointer;
+         color: var(--slate-color);
+         font-size: 24px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         transition: all 0.3s;
+         margin-top: -4px;
+         font-weight: 700;
+     }
+     [type="submit"]:hover{
+         background: #cc6666;
+     }
      @media screen and (max-width: 1400px) {
       .service-card-container {
           display: flex;
