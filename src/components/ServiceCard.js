@@ -7,14 +7,14 @@ export default function ServiceCard({
   cardText,
 }) {
   return (
-    <div className="card mx-4 text-center">
-      <img
+    <div className="card">
+      {/* <img
         src={cardImgUrl}
         height="200"
         width="200"
         alt={cardImgAlt}
         className="card-img-top"
-      />
+      /> */}
       <div className="card-body">
         <h1 className="card-title">{cardTitle}</h1>
         {cardText.map((text) => {

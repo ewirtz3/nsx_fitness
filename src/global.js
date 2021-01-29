@@ -111,6 +111,33 @@ export const GlobalStyles = createGlobalStyle`
      #card-container {
          padding: 20px;
      }
+     #services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+     .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex: 0 1 30%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 2px solid var(--red-color);
+        background-color: var(--slate-color);
+        padding: 20px;
+        color: white;
+     }
+    //  .card-img-top {
+    //      width: 100%;
+    //  }
+    .card-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 25px;
+    }
      .horizontal-rule {
          opacity: 0.75;
      }
@@ -118,12 +145,12 @@ export const GlobalStyles = createGlobalStyle`
          max-width: 420px;
          margin: 50px auto;
      }
-     .contact-header{
+     .contact-header {
          max-width: 420px;
          margin: 50px auto;
          text-align: center;
      }
-     .contact-input{
+     .contact-input {
          color: white;
          font-weight: 500;
          font-size: 18px;
@@ -157,7 +184,7 @@ export const GlobalStyles = createGlobalStyle`
          margin-top: -4px;
          font-weight: 700;
      }
-     [type="submit"]:hover{
+     [type="submit"]:hover {
          background: #cc6666;
      }
      @media screen and (max-width: 1400px) {

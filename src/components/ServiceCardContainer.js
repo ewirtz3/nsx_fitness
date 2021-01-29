@@ -7,11 +7,12 @@ export default function ServiceCardContainer() {
       cardImgUrl:
         "https://recreation.uic.edu/wp-content/uploads/sites/377/2019/01/REC_FTile_PersonalTrainType.jpg",
       cardImgAlt:
-        "Offering personalized workouts in 300 and 60-minute time blocks",
+        "Offering personalized workouts in 30 and 60-minute time blocks",
       cardTitle: "Personalized Fitness Plans",
       cardText: [
         "Initial assessment, plus a concrete 6-, 12-, or 20-week plan based on your goals and physical needs",
-        "30-or 60-minute sessions",
+        "30- or 60-minute sessions",
+        "Recommended homeworks for in between sessions, including cardio, stretching, and foam rolling",
       ],
     },
     {
@@ -38,21 +39,19 @@ export default function ServiceCardContainer() {
     },
   ];
   return (
-    <div className="container-fluid bg-danger" id="card-container">
-      <div className="container-xl">
-        <div id="services" className="card-deck">
-          {serviceCardArr.map((serviceCard, i) => {
-            return (
-              <ServiceCard
-                key={i}
-                cardImgUrl={serviceCard.cardImgUrl}
-                cardImgAlt={serviceCard.cardImgAlt}
-                cardTitle={serviceCard.cardTitle}
-                cardText={serviceCard.cardText}
-              />
-            );
-          })}
-        </div>
+    <div id="card-container">
+      <div id="services">
+        {serviceCardArr.map((serviceCard, i) => {
+          return (
+            <ServiceCard
+              key={i}
+              cardImgUrl={serviceCard.cardImgUrl}
+              cardImgAlt={serviceCard.cardImgAlt}
+              cardTitle={serviceCard.cardTitle}
+              cardText={serviceCard.cardText}
+            />
+          );
+        })}
       </div>
     </div>
   );
