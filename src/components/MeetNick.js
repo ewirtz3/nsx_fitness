@@ -3,8 +3,8 @@ import nick from "./nick_nsxfitness.jpg";
 
 export default function MeetNick() {
   return (
-    <section id="meet-nick" className="container-fluid bg-danger">
-      <div className="container d-flex justify-content-center">
+    <section id="meet-nick">
+      <div className="intro">
         <img src={nick} alt="Nick Signorino" height="500px" width="330px" />
         <div className="container">
           <p className="meet-nick">

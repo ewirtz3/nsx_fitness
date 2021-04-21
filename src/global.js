@@ -66,47 +66,50 @@ export const GlobalStyles = createGlobalStyle`
         cursor: pointer;
         color: var(--red-color);
     }
-     #footer{
-      bottom: 0;
-      left: 0;
-      right: 0;
-      div.social-links{
-          background: var(--slate-color);
-          color: white;
-          overflow: hidden;
-          padding-bottom: 4px;
-          text-align: center;
-          ul {
-              margin: 0;
-              padding: 0;
-          }
-          li {
-              display: inline;
-              margin: 0;
-              padding: 0;
-          }
-      }
-  }
+     
   .fa-instagram, .fa-facebook, .fa-tiktok {
       padding: 10px;
   }
-     #meet-nick {
+     .intro {
          display: flex;
          flex-direction: row;
+         justify-content: center;
          align-items: center;
+         padding: 10px;
+     }
+     .intro img {
+         margin: 15px;
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: 2px solid var(--slate-color);
+     }
+     .container {
+         color: white;
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: 2px solid var(--red-color);
+         background-color: var(--slate-color);
+         width: 50%;
          padding: 10px;
      }
      .meet-nick {
          padding: 5px;
-         color: #ffffff;
          font-size: 18px;
      }
      #fit-tip {
          display: flex;
          flex-direction: row;
          align-items: center;
-         margin: 20px;
+         margin: 30px;
          font-size: 18px;
+     }
+     .fit-tip-text {
+         color: white;
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: 2px solid var(--red-color);
+         background-color: var(--slate-color);
+         padding: 15px;
      }
      #card-container {
          padding: 20px;
@@ -187,6 +190,27 @@ export const GlobalStyles = createGlobalStyle`
      [type="submit"]:hover {
          background: #cc6666;
      }
+     #footer{
+        bottom: 0;
+        left: 0;
+        right: 0;
+        div.social-links{
+            background: var(--slate-color);
+            color: white;
+            overflow: hidden;
+            padding-bottom: 4px;
+            text-align: center;
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                display: inline;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
      @media screen and (max-width: 1400px) {
       .service-card-container {
           display: flex;

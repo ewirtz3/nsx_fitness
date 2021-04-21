@@ -2,8 +2,8 @@ import React from "react";
 
 export default function FitTip() {
   return (
-    <div id="fit-tip" className="container-fluid">
-      <div className="fit-tip-text container">
+    <div id="fit-tip">
+      <div className="fit-tip-text">
         <p>
           Today's Fit Tip: Stretching is super important! Do it as soon as you
           wake up to get your blood flowing. Science sees a 60% decrease in
@@ -22,7 +22,7 @@ export default function FitTip() {
           <em>Never</em> lock your knees, and always keep breathing.
         </p>
       </div>
-      <div className="container">
+      <div>
         <img
           src="https://www.risephysicaltherapy.com/uploads/dynamic-stretches.jpg"
           alt="8 stretches to wake your body up"
