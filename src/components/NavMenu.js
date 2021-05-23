@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-export default function NavMenu() {
+export default function NavMenu(props) {
+  console.log(props);
   return (
     <ul className="nav-items">
       <li className="nav-item">

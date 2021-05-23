@@ -47,21 +47,61 @@ export const GlobalStyles = createGlobalStyle`
         padding: 5px;
         color: var(--red-color);
     }
-    .nav-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        text-shadow: 1px 1px var(--slate-color);
-        width: 100vw;
+    // .nav-content {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     height: 100%;
+    //     text-shadow: 1px 1px var(--slate-color);
+    //     width: 100vw;
+    // }
+    // .nav-item {
+    //     display: inline;
+    //     margin-left: 25px;
+    //     margin-right: 25px;
+    //     font-size: 25px;
+    // }
+
+    .navBar {
+        position: relative;
     }
-    .nav-item {
-        display: inline;
-        margin-left: 25px;
-        margin-right: 25px;
-        font-size: 25px;
+    .navBar button {
+        position: fixed;
+        left: 40px;
+        top: 40px;
+        z-index: 10;
+        cursor: pointer;
     }
+    .menuNav {
+        overflow-y: scroll;
+        list-style: none;
+        position: fixed:
+        top: 0;
+        background: darkcyan;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 0;
+        overflow: hidden;
+        max-width: 290px;
+        z-index: 9;
+    }
+    .menuNav .showMenu {
+        width: 100%;
+    }
+    a {
+        display: block;
+        padding: 10px 40px;
+        text-decoration: none;
+        color: #3fffd2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .menuNav li:first-child {
+        margin-top: 7rem;
+    }
+
     .nav-item:hover {
         cursor: pointer;
         color: var(--red-color);
