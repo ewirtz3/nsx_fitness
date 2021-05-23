@@ -1,11 +1,12 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import MeetNick from "./components/MeetNick";
-import FitTip from "./components/FitTip";
-import ServiceCardContainer from "./components/ServiceCardContainer";
-import Contact from "./components/Contact";
-import { GlobalStyles } from "./global";
+// import NavBar from "./components/NavBar";
+// import Footer from "./components/Footer";
+// import MeetNick from "./components/MeetNick";
+// import FitTip from "./components/FitTip";
+// import ServiceCardContainer from "./components/ServiceCardContainer";
+// import Contact from "./components/Contact";
+// import { GlobalStyles } from "./global";
+import NavDots from "./components2/NavDots";
 import { GlobalStyles2 } from "./global2";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <nav>
         <p>hello</p>
       </nav>
+      <NavDots />
     </div>
   );
 }
