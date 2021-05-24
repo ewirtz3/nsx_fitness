@@ -22,9 +22,6 @@ function App() {
     // </div>
     <div className="App">
       <GlobalStyles2 />
-      <nav>
-        <p>hello</p>
-      </nav>
       <NavDots />
     </div>
   );

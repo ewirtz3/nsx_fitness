@@ -11,4 +11,13 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.red-color {
+    color: var(--red-color);
+}
+
 `;
