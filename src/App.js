@@ -6,7 +6,7 @@ import "./App.css";
 // import ServiceCardContainer from "./components/ServiceCardContainer";
 // import Contact from "./components/Contact";
 // import { GlobalStyles } from "./global";
-import NavDots from "./components2/NavDots";
+import NavBar from "./components2/NavBar";
 import { GlobalStyles2 } from "./global2";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     // </div>
     <div className="App">
       <GlobalStyles2 />
-      <NavDots />
+      <NavBar />
     </div>
   );
 }
