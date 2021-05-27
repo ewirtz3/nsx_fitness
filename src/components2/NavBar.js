@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 export default function NavBar() {
   return (
-    <Box display="flex" flexDirection="row" justifyContent="space-between">
+    <Box id="navbar">
       <Logo />
       <NavDots />
     </Box>

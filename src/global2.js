@@ -50,5 +50,19 @@ body {
     margin: 0px;
 
   }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+  }
+
+  #intro-div {
+      height: 100px;
+  }
   
+  #intro-pic {
+    width: 100vw;
+  }
 `;

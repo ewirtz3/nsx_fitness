@@ -7,6 +7,7 @@ import "./App.css";
 // import Contact from "./components/Contact";
 // import { GlobalStyles } from "./global";
 import NavBar from "./components2/NavBar";
+import Intro from "./components2/Intro";
 import { GlobalStyles2 } from "./global2";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <GlobalStyles2 />
       <NavBar />
+      <Intro />
     </div>
   );
 }
