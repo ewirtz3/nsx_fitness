@@ -23,6 +23,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.positioning-div {
+    position: absolute:
+    top: 0;
+    left: 0;
+}
+
 #nav-dots {
     display: flex;
     flex-direction: column;
@@ -44,30 +50,29 @@ body {
   .fa-dumbbell {
     transform: rotate(30deg);
     padding: 5px;
-    color: var(--red-color);
 }
 
 #header-name>h1, #header-name>h5 {
     align-self: center;
     padding: 2px;
     margin: 0px;
-
   }
 
   #navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5px;
+    margin: 0px;
     color: var(--white-color);
+    padding: 5px;
   }
 
-  .MuiIconButton-label {
+  .MuiIconButton-label, #meet-nick {
       color: var(--white-color);
   }
 
   #intro-div {
-      height: 100px;
+      height: 800px;
   }
   
   #intro-pic {
@@ -78,11 +83,18 @@ body {
     z-index: -1;
   }
 
-  #intro-div>i {
-    color: var(--teal-color-light);
+  #enter-icon {
+    color: var(--red-color-primary);
     z-index: 0;
     position: absolute;
-    right: 5px;
-    top: 50%;
+    right: 40px;
+    top: 400px;
   }
+
+#meet-nick {
+    background-color: var(--teal-color-primary);
+    width: 100vw;
+    position: absolute;
+    top: 550px;
+}
 `;

@@ -8,6 +8,7 @@ import "./App.css";
 // import { GlobalStyles } from "./global";
 import NavBar from "./components2/NavBar";
 import Intro from "./components2/Intro";
+import MeetNick from "./components2/MeetNick";
 import { GlobalStyles2 } from "./global2";
 
 function App() {
@@ -22,9 +23,21 @@ function App() {
     //   <Footer />
     // </div>
     <div className="App">
-      <GlobalStyles2 />
-      <NavBar />
-      <Intro />
+      <div className="positioning-div">
+        <GlobalStyles2 />
+      </div>
+
+      <div className="positioning-div">
+        <NavBar />
+      </div>
+
+      <div className="positioning-div">
+        <Intro />
+      </div>
+
+      <div className="positioning-div">
+        <MeetNick />
+      </div>
     </div>
   );
 }
