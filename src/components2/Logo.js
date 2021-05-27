@@ -8,21 +8,8 @@ export default function Logo() {
   };
 
   return (
-    <Box
-      id="header-logo"
-      display="flex"
-      flexDirection="row"
-      className="red-color"
-      alignItems="center"
-      p={1}
-      m={1}
-    >
-      <Box
-        id="header-name"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-      >
+    <Box id="header-logo" className="red-color">
+      <Box id="header-name">
         <h1 onClick={scrollToTop}>NSXfitness</h1>
         <h5>PERSONAL TRAINING</h5>
       </Box>

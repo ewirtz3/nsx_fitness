@@ -19,21 +19,32 @@ export const GlobalStyles = createGlobalStyle`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
+    }
+    #nav-dots {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     #header-logo {
-        font-family: 'Barlow Condensed', sans-serif;
+        font-family: "Barlow Condensed", sans-serif;
         color: var(--red-color);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         margin-left: 25px;
         text-shadow: 2px 2px var(--slate-color);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
     }
     #header-name {
-        display: block;
         font-size: 40px;
         line-height: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    div>h1, div>h5 {
+        align-self: center;
+        background: blue;
     }
     #header-icon {
         font-size: 40px;

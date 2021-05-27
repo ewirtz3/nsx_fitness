@@ -20,4 +20,33 @@ body {
     color: var(--red-color);
 }
 
+#nav-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  #header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  #header-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fa-dumbbell {
+    transform: rotate(30deg);
+    padding: 5px;
+    color: var(--red-color);
+}
+
+#header-name>h1, #header-name>h5 {
+    align-self: center;
+    padding: 2px;
+  }
+  
 `;

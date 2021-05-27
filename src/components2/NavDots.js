@@ -4,7 +4,7 @@ import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 
 export default function NavDots() {
   return (
-    <Box id="nav-dots" display="flex" justifyContent="flex-end">
+    <Box id="nav-dots">
       <PopupState variant="popover" popupId="nav-dots">
         {(popupState) => (
           <React.Fragment>
