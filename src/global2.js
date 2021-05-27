@@ -47,6 +47,8 @@ body {
 #header-name>h1, #header-name>h5 {
     align-self: center;
     padding: 2px;
+    margin: 0px;
+
   }
   
 `;
