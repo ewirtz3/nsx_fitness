@@ -8,7 +8,7 @@ export default function Logo() {
   };
 
   return (
-    <Box id="header-logo" className="red-color">
+    <Box id="header-logo">
       <Box id="header-name">
         <h1 onClick={scrollToTop}>NSXfitness</h1>
         <h5>PERSONAL TRAINING</h5>

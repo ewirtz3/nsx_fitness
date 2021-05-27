@@ -2,9 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles2 = createGlobalStyle`
 :root {
-    --slate-color: rgb(30,30,40);
-    --red-color: #c7162b;
-    --teal-color: #0096a1;
+    --slate-color-primary: #1e1e28;
+    --slate-color-light: #454550;
+    --slate-color-dark: #000000;
+    --red-color-primary: #c7162b;
+    --red-color-light: #ff5554;
+    --red-color-dark: #8e0002;
+    --teal-color-primary: #0096a1;
+    --teal-color-light: #55c7d2;
+    --teal-color-dark: #006872;
+    --white-color: #ffffff;
 }
 
 html, body {
@@ -16,14 +23,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.red-color {
-    color: var(--red-color);
-}
-
 #nav-dots {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
   
   #header-logo {
@@ -56,6 +59,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 5px;
+    color: var(--white-color);
+  }
+
+  .MuiIconButton-label {
+      color: var(--white-color);
   }
 
   #intro-div {
@@ -64,5 +72,17 @@ body {
   
   #intro-pic {
     width: 100vw;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  #intro-div>i {
+    color: var(--teal-color-light);
+    z-index: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
   }
 `;

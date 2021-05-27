@@ -9,7 +9,7 @@ export default function NavDots() {
         {(popupState) => (
           <React.Fragment>
             <IconButton {...bindTrigger(popupState)}>
-              <Icon className="fas fa-ellipsis-v red-color"></Icon>
+              <Icon className="fas fa-ellipsis-v"></Icon>
             </IconButton>
             <Menu {...bindMenu(popupState)}>
               <MenuItem onClick={popupState.close}>Meet Nick</MenuItem>

@@ -13,6 +13,7 @@ export default function Intro() {
   return (
     <div id="intro-div">
       <img id="intro-pic" src={introPic}></img>
+      <i class="fas fa-angle-right fa-9x enter"></i>
     </div>
   );
 }
