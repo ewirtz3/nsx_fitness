@@ -34,7 +34,9 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-  
+  .fa-ellipsis-v {
+      filter: drop-shadow(2px 2px 2px var(--red-color-dark));
+  }
   #header-logo {
     display: flex;
     flex-direction: row;
@@ -65,6 +67,7 @@ body {
     margin: 0px;
     color: var(--white-color);
     padding: 5px;
+    text-shadow: 2px 2px 2px var(--red-color-dark);
   }
 
   .MuiIconButton-label, #meet-nick {
@@ -87,14 +90,17 @@ body {
     color: var(--red-color-primary);
     z-index: 0;
     position: absolute;
-    right: 40px;
+    right: 10px;
     top: 400px;
   }
 
 #meet-nick {
-    background-color: var(--teal-color-primary);
+    background-color: var(--slate-color-primary);
     width: 100vw;
     position: absolute;
     top: 550px;
+}
+.meet-nick {
+    padding: 10px;
 }
 `;
