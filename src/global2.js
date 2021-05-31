@@ -88,10 +88,11 @@ body {
 
   #enter-icon {
     color: var(--red-color-primary);
+    box-shadow: 2px 2px 2px var(--red-color-dark);
     z-index: 0;
     position: absolute;
     right: 10px;
-    top: 400px;
+    top: 475px;
   }
 
 #meet-nick {
