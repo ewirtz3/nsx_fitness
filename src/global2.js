@@ -17,19 +17,21 @@ export const GlobalStyles2 = createGlobalStyle`
 html, body {
     margin: 0;
     padding: 0;
-}
+    }
 
 body {
     font-family: 'Montserrat', sans-serif;
-}
+    }
+
 
 .positioning-div {
-    position: absolute:
+    position: absolute;
     top: 0;
     left: 0;
-}
+    width: 100vw;
+    }
 
-#nav-dots {
+    #nav-dots {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,6 +82,7 @@ body {
   
   #intro-pic {
     width: 100vw;
+    height: 100vh;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -92,16 +95,30 @@ body {
     z-index: 0;
     position: absolute;
     right: 10px;
-    top: 475px;
+    top: 95vh;
   }
 
 #meet-nick {
     background-color: var(--slate-color-primary);
     width: 100vw;
     position: absolute;
-    top: 550px;
+    top: 110rem;
+    right: 0px;
+    left: 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.meet-nick {
-    padding: 10px;
+#nick-text {
+    padding: 20px;
+    text-align: center;
+    width: 75vw;
+}
+
+#nick-pic {
+    height: 500px;
+    width: 330px;
 }
 `;
