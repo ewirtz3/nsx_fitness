@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Logo from "./Logo";
 import { Link } from "react-scroll";
-import NavMenu from "./NavMenu";
 
 export default function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);

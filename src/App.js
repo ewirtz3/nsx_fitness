@@ -9,7 +9,7 @@ import "./App.css";
 import NavBar from "./components2/NavBar";
 import Intro from "./components2/Intro";
 import MeetNick from "./components2/MeetNick";
-import ServiceCards from "./components2/ServiceCards";
+import ServiceCardContainer from "./components2/ServiceCardContainer";
 import { GlobalStyles2 } from "./global2";
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <MeetNick />
       </div>
       <div className="positioning-div">
-        <ServiceCards />
+        <ServiceCardContainer />
       </div>
     </div>
   );

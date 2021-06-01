@@ -121,4 +121,12 @@ body {
     height: 500px;
     width: 330px;
 }
+
+#service-cards {
+    position: absolute;
+    top: 174rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 `;
