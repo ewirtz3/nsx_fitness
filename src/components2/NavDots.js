@@ -1,5 +1,6 @@
 import React from "react";
-import { IconButton, Menu, MenuItem, Icon, Box } from "@material-ui/core";
+import { IconButton, Menu, MenuItem, Box } from "@material-ui/core";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 
 export default function NavDots() {
@@ -9,7 +10,7 @@ export default function NavDots() {
         {(popupState) => (
           <React.Fragment>
             <IconButton {...bindTrigger(popupState)}>
-              <Icon className="fas fa-ellipsis-v"></Icon>
+              <MoreVertIcon fontSize="large" className="dots" />
             </IconButton>
             <Menu {...bindMenu(popupState)}>
               <MenuItem onClick={popupState.close}>Meet Nick</MenuItem>

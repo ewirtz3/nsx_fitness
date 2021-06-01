@@ -9,6 +9,7 @@ import "./App.css";
 import NavBar from "./components2/NavBar";
 import Intro from "./components2/Intro";
 import MeetNick from "./components2/MeetNick";
+import ServiceCards from "./components2/ServiceCards";
 import { GlobalStyles2 } from "./global2";
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
 
       <div className="positioning-div">
         <MeetNick />
+      </div>
+      <div className="positioning-div">
+        <ServiceCards />
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-  .fa-ellipsis-v {
+  .dots{
       filter: drop-shadow(2px 2px 2px var(--red-color-dark));
   }
   #header-logo {
