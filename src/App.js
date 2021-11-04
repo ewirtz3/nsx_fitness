@@ -24,15 +24,10 @@ function App() {
     //   <Footer />
     // </div>
     <div className="App">
-      <div className="positioning-div">
-        <GlobalStyles2 />
-      </div>
+      <GlobalStyles2 />
+      <NavBar />
 
-      <div className="positioning-div">
-        <NavBar />
-      </div>
-
-      <div className="positioning-div">
+      {/* <div className="positioning-div">
         <Intro />
       </div>
 
@@ -41,7 +36,7 @@ function App() {
       </div>
       <div className="positioning-div">
         <ServiceCardContainer />
-      </div>
+      </div> */}
     </div>
   );
 }

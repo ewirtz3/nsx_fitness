@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@material-ui/core";
 import { animateScroll as scroll } from "react-scroll";
+import logo from "../assets/barbell_logo3.jpg";
 
 export default function Logo() {
   const scrollToTop = () => {
@@ -9,11 +10,8 @@ export default function Logo() {
 
   return (
     <Box id="header-logo">
-      <Box id="header-name">
-        <h1 onClick={scrollToTop}>NSXfitness</h1>
-        <h5>PERSONAL TRAINING</h5>
-      </Box>
-      <i id="header-icon" className="fas fa-dumbbell fa-md text-danger"></i>
+      <img src={logo} onClick={scrollToTop} alt="NSX Fitness Logo" id="logo" />
+      <h1>PERSONAL TRAINING</h1>
     </Box>
   );
 }

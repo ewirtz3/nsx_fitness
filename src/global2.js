@@ -2,131 +2,141 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles2 = createGlobalStyle`
 :root {
-    --slate-color-primary: #1e1e28;
-    --slate-color-light: #454550;
-    --slate-color-dark: #000000;
-    --red-color-primary: #c7162b;
-    --red-color-light: #ff5554;
-    --red-color-dark: #8e0002;
-    --teal-color-primary: #0096a1;
-    --teal-color-light: #55c7d2;
-    --teal-color-dark: #006872;
-    --white-color: #ffffff;
+  --slate-color-primary: #1e1e28;
+  --slate-color-light: #454550;
+  --slate-color-dark: #000000;
+  --red-color-primary: #c7162b;
+  --red-color-light: #ff5554;
+  --red-color-dark: #8e0002;
+  --teal-color-primary: #0096a1;
+  --teal-color-light: #55c7d2;
+  --teal-color-dark: #006872;
+  --white-color: #ffffff;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    }
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    }
-
-
-.positioning-div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    }
-
-    #nav-dots {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .dots{
-      filter: drop-shadow(2px 2px 2px var(--red-color-dark));
-  }
-  #header-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  
-  #header-name {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .fa-dumbbell {
-    transform: rotate(30deg);
-    padding: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#header-name>h1, #header-name>h5 {
-    align-self: center;
-    padding: 2px;
-    margin: 0px;
-  }
-
+@media only screen and (max-width: 360px) {
   #navbar {
-    display: flex;
+    background-color: var(--red-color-dark);
+  }
+
+  #header-logo {
+    display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0px;
-    color: var(--white-color);
-    padding: 5px;
-    text-shadow: 2px 2px 2px var(--red-color-dark);
   }
 
-  .MuiIconButton-label, #meet-nick {
-      color: var(--white-color);
+  #header-logo>h1 {
+    font-size: 25px;
+    text-align: right;
   }
 
-  #intro-div {
-      height: 800px;
+  #logo {
+    width: 50%;
+    padding-left: 10px;
   }
+
+  #nav-dots {
+    width: 15%;
+  }
+}
+
+#navbar {
+  display: inline-flex;
+  flex-direction: row;
+  height: 40vw;
+  margin: 0px;
+  color: var(--white-color);
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px var(--red-color-dark);
+}
+
+#header-logo {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#nav-dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dots{
+  filter: drop-shadow(2px 2px 2px var(--red-color-dark));
+}
+
+#header-logo>h1 {
+  align-self: center;
+  padding: 2px;
+  margin: 0px;
+}
+
+.MuiIconButton-label, #meet-nick {
+  color: var(--white-color);
+}
+
+#intro-div {
+  height: 800px;
+}
   
-  #intro-pic {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-  }
+#intro-pic {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
 
-  #enter-icon {
-    color: var(--red-color-primary);
-    box-shadow: 2px 2px 2px var(--red-color-dark);
-    z-index: 0;
-    position: absolute;
-    right: 10px;
-    top: 95vh;
-  }
+#enter-icon {
+  color: var(--red-color-primary);
+  box-shadow: 2px 2px 2px var(--red-color-dark);
+  z-index: 0;
+  position: absolute;
+  right: 10px;
+  top: 95vh;
+}
 
 #meet-nick {
-    background-color: var(--slate-color-primary);
-    width: 100vw;
-    position: absolute;
-    top: 110rem;
-    right: 0px;
-    left: 0px;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  background-color: var(--slate-color-primary);
+  width: 100vw;
+  position: absolute;
+  top: 110rem;
+  right: 0px;
+  left: 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 #nick-text {
-    padding: 20px;
-    text-align: center;
-    width: 75vw;
+  padding: 20px;
+  text-align: center;
+  width: 75vw;
 }
 
 #nick-pic {
-    height: 500px;
-    width: 330px;
+  height: 500px;
+  width: 330px;
 }
 
 #service-cards {
-    position: absolute;
-    top: 174rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  position: absolute;
+  top: 174rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: space-around;
 }
 `;
