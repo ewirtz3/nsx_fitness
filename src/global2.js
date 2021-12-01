@@ -23,24 +23,22 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 411px) {
   #navbar {
     background-color: var(--red-color-dark);
-  }
-
-  #header-logo {
-    display: inline-flex;
-    flex-direction: row;
+    height: 35vw !important;
   }
 
   #header-logo>h1 {
-    font-size: 25px;
-    text-align: right;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10px;
   }
 
   #logo {
     width: 50%;
-    padding-left: 10px;
+    padding-left: 5vw;
+    padding-bottom: 3vw;
   }
 
   #nav-dots {
@@ -48,10 +46,59 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  #navbar {
+    background-color: var(--red-color-dark);
+    height: 20vw !important;
+    justify-content: space-between !important;
+  }
+
+  #header-logo>h1 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  #logo {
+    width: 30%;
+    padding-left: 3vw;
+  }
+
+  #nav-dots {
+    width: 5%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #navbar {
+    background-color: var(--teal-color-dark);
+    height: 12vw !important;
+    justify-content: space-between !important;
+  }
+
+  #header-logo>h1 {
+    font-size: 30px;
+    width: 60vw;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  #logo {
+    width: 20%;
+    height: 90%;
+    padding-left: 2vw;
+  }
+
+  #nav-dots {
+    width: 5%;
+  }
+}
+
 #navbar {
   display: inline-flex;
   flex-direction: row;
   height: 40vw;
+  width: 100vw;
   margin: 0px;
   color: var(--white-color);
   box-sizing: border-box;
@@ -62,6 +109,7 @@ body {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 #nav-dots {
@@ -73,12 +121,7 @@ body {
 .dots{
   filter: drop-shadow(2px 2px 2px var(--red-color-dark));
 }
-
-#header-logo>h1 {
-  align-self: center;
-  padding: 2px;
-  margin: 0px;
-}
+-----------------------------
 
 .MuiIconButton-label, #meet-nick {
   color: var(--white-color);
